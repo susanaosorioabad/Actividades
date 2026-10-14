@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Susana Osorio</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <nav class="bar" aria-label="Principal">
+      <ul class="links">
+        <li><a href="#about" data-i18n="nav_about">Sobre mí</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Habilidades</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+      </ul>
+      <div class="tools">
+        <button id="lang" class="tool" type="button" aria-label="Cambiar idioma / Change language">
+          <svg class="flag flag-es" viewBox="0 0 3 2" aria-hidden="true"><rect width="3" height="2" fill="#c60b1e"/><rect y=".5" width="3" height="1" fill="#ffc400"/></svg>
+          <svg class="flag flag-en" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="uk"><path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath><path d="M0,0v30h60v-30z" fill="#012169"/><path d="M0,0L60,30M60,0L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0L60,30M60,0L0,30" clip-path="url(#uk)" stroke="#c8102e" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#c8102e" stroke-width="6"/></svg>
+        </button>
+        <button id="theme" class="tool" type="button" aria-label="Cambiar tema">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+          <span id="theme-label" data-i18n="theme_dark">Oscuro</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="wrap">
+      <h1>Susana Osorio</h1>
+      <p class="lead" data-i18n="about_text">Curso segundo semestre en la Universidad María Cano, estoy comenzando mi proceso de aprendizaje como ingeniera en software. Aprendo rápido, trabajo bien en equipo y disfruto explicar mis conocimientos.</p>
+      <dl class="facts">
+        <div><dt data-i18n="about_loc">Ubicación</dt><dd>Medellín, Colombia</dd></div>
+        <div><dt data-i18n="about_edu">Grado de estudios</dt><dd data-i18n="about_edu_v">Bachiller, 2do Semestre de Ingeniería en Software</dd></div>
+      </dl>
+    </section>
+
+    <section id="skills" class="wrap">
+      <h2 data-i18n="skills_title">Habilidades</h2>
+
+      <h3 data-i18n="langs">Lenguajes</h3>
+      <ul class="bars">
+        <li style="--p:65"><span>Python</span><b>65%</b><i role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></i></li>
+        <li style="--p:45"><span>Java</span><b>45%</b><i role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></i></li>
+        <li style="--p:25"><span>JavaScript</span><b>25%</b><i role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></i></li>
+        <li style="--p:15"><span>CSS</span><b>15%</b><i role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></i></li>
+        <li style="--p:25"><span>HTML</span><b>25%</b><i role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></i></li>
+      </ul>
+
+      <h3 data-i18n="tools">Herramientas y Apps</h3>
+      <ul class="tools-list">
+        <li><img src="assets/logos/vscode.png" alt="" width="40" height="40"><div><strong>Visual Studio Code</strong><span data-i18n="t_code">Editor de código</span></div></li>
+        <li><img src="assets/logos/colab.png" alt="" width="40" height="40"><div><strong>Google Colab</strong><span data-i18n="t_code">Editor de código</span></div></li>
+        <li><img src="assets/logos/canva.png" alt="" width="40" height="40"><div><strong>Canva</strong><span data-i18n="t_design">Diseño</span></div></li>
+        <li><img src="assets/logos/excel.png" alt="" width="40" height="40"><div><strong>Excel</strong><span data-i18n="t_org">Organización</span></div></li>
+        <li><img class="gh" src="assets/logos/github.png" alt="" width="40" height="40"><div><strong>GitHub</strong><span data-i18n="t_pub">Publicación y almacenamiento</span></div></li>
+        <li><img src="assets/logos/java.png" alt="" width="40" height="40"><div><strong>Java</strong><span data-i18n="t_lang">Lenguaje de código</span></div></li>
+        <li><img src="assets/logos/python.png" alt="" width="40" height="40"><div><strong>Python</strong><span data-i18n="t_lang">Lenguaje de código</span></div></li>
+        <li><img class="gh" src="assets/logos/notion.png" alt="" width="40" height="40"><div><strong>Notion</strong><span data-i18n="t_org">Organización</span></div></li>
+      </ul>
+
+      <h3 data-i18n="soft">Otras habilidades (Soft Skills)</h3>
+      <ul class="chips">
+        <li data-i18n="s1">Trabajo en equipo</li>
+        <li data-i18n="s2">Puntualidad</li>
+        <li data-i18n="s3">Resolución de problemas</li>
+        <li data-i18n="s4">Machine learning</li>
+      </ul>
+
+      <h3 data-i18n="langs2">Idiomas</h3>
+      <ul class="chips">
+        <li data-i18n="l1">Español (Nativo)</li>
+        <li data-i18n="l2">Inglés (B2)</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="wrap">
+      <h2 data-i18n="projects_title">Proyectos</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/img/promodoro.png" alt="Promodoro" width="120" height="120">
+          <h3>Promodoro</h3>
+          <p class="stack">HTML, CSS, JavaScript</p>
+          <p data-i18n="p1">App web para organizar sesiones de estudio.</p>
+          <a class="code" href="#" data-i18n="code">Ver código</a>
+        </article>
+        <article class="card">
+          <img src="assets/img/temperatura.png" alt="Temperatura" width="120" height="120">
+          <h3 data-i18n="p2_title">Temperatura</h3>
+          <p class="stack">Java</p>
+          <p data-i18n="p2">Calculadora Celsius a Fahrenheit en Java.</p>
+          <a class="code" href="#" data-i18n="code">Ver código</a>
+        </article>
+        <article class="card">
+          <img src="assets/img/menu-tienda.png" alt="Menú para tienda" width="120" height="120">
+          <h3 data-i18n="p3_title">Menú para tienda</h3>
+          <p class="stack">Java</p>
+          <p data-i18n="p3">Menú de compras y ventas en una tienda.</p>
+          <a class="code" href="#" data-i18n="code">Ver código</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2 data-i18n="contact_title">Contacto</h2>
+      <div class="contact-grid">
+        <form id="form" action="https://formsubmit.co/Susanaabad2122@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <label><span data-i18n="f_name">Nombre</span><input name="name" type="text" required autocomplete="name"></label>
+          <label><span data-i18n="f_msg">Mensaje</span><textarea name="message" rows="5" required></textarea></label>
+          <button class="send" type="submit" data-i18n="f_send">Enviar mensaje</button>
+          <p id="status" role="status"></p>
+        </form>
+        <div class="side">
+          <p class="phone mail"><span data-i18n="email">Correo</span><a href="mailto:susanaabad2122@gmail.com">susanaabad2122@gmail.com</a></p>
+          <p class="phone"><span data-i18n="phone">Teléfono</span><a href="tel:+573218924838">+57 3218924838</a></p>
+          <div class="social">
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><img class="gh" src="assets/logos/github.png" alt="" width="44" height="44"></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/logos/linkedin.svg" alt="" width="44" height="44"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">Susana Osorio</footer>
+  <script src="script.js"></script>
+</body>
+</html>
